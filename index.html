@@ -21,7 +21,7 @@
               <h1>Name Generator</h1>
 
               <!-- form -->
-              <form class="website-form">
+              <form id="wordForm" class="website-form">
                 <div class="form-group">
                   <label for="word_input">Name</label>
                   <input type="text" name="word_input" class="form-control" id="word_input" value="ImaName">
@@ -53,13 +53,13 @@
               <h1>Generate!</h1>
 
               <!-- form -->
-              <form class="website-form">
-                <div class="form-group">
+              <form id="generateForm" class="website-form">
+                <!-- <div class="form-group">
                   <label for="word_input">Name</label>
                   <input type="text" name="word_input" class="form-control" id="word_input" value="ImaName">
-                </div>
+                </div> -->
 
-                <input type="submit" id="submitBtn" class="btn btn-primary" name="submit" value="Add Name">
+                <input type="submit" id="generateBtn" class="btn btn-primary" name="generateBtn" value="Generate">
               </form>
             </div>
           </div>
@@ -68,7 +68,7 @@
             <span class="bigtext"><i class="material-icons md-60">arrow_downward</i></span>
             <div class="col-xs-12 word-cont">
               <h2>Name List</h2>
-              <ul id="word_list">
+              <ul id="name_list">
 
               </ul>
             </div>

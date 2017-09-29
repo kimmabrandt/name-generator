@@ -1,18 +1,48 @@
-var wordList = ['name1', 'name2'];
+var wordList = [];
 var wordItem;
 
 $(document).ready(function() {
 
-  $('form').submit(function(event) {
+  // enter words
+  $('#wordForm').submit(function(event) {
     wordItem = $('#word_input').val();
     wordList.push(wordItem);
     console.log(wordList);
     $('#word_list').append('<li>' + wordItem + '</li>')
 
+    event.preventDefault();
+  });
+
+
+  // generate names
+  $('#generateForm').submit(function(event) {
+    // wordItem = $('#word_input').val();
+
+    for (var i = 0; i < 10; i++) {
+      var wordIndex1 = Math.floor(Math.random() * wordList.length);
+      var wordIndex2 = Math.floor(Math.random() * wordList.length);
+      var wordIndex3 = Math.floor(Math.random() * wordList.length);
+      var wordRandom1 = wordList[wordIndex1];
+      var wordRandom2 = wordList[wordIndex2];
+      var wordRandom3 = wordList[wordIndex3];
+
+      $('#name_list').append('<li>' + wordRandom1 + ' ' + wordRandom2 + '</li>')
+    }
+
 
     event.preventDefault();
   });
 
+  // // Returns a random integer between min and max
+  //
+  // function getRandomInt(min, max) {
+  //   return Math.floor(Math.random() * (max - min + 1)) + min;
+  // }
+  // Useful examples:
+  //
+  // // 0 - 10
+  // Math.floor(Math.random() * 11);
+  //
 
 
 
