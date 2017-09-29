@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Name Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+  <body>
+
+    <div class="container2">
+      <div class="row">
+        <!-- left side -->
+        <div class="col-xs-12 col-md-6">
+
+          <div class="row justify-content-md-center">
+            <span class="bigtext">1</span>
+            <div class="col-md-auto form-cont">
+              <h1>Name Generator</h1>
+
+              <!-- form -->
+              <form class="website-form">
+                <div class="form-group">
+                  <label for="word_input">Name</label>
+                  <input type="text" name="word_input" class="form-control" id="word_input" value="ImaName">
+                </div>
+
+                <input type="submit" id="submitBtn" class="btn btn-primary" name="submit" value="Add Name">
+              </form>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <span class="bigtext"><i class="material-icons md-60">arrow_downward</i></span>
+            <div class="col-xs-12 word-cont">
+              <h2>Word List</h2>
+              <ul id="word_list">
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- right side -->
+        <div class="col-xs-12 col-md-6">
+          <div class="row justify-content-md-center">
+            <span class="bigtext">2</span>
+            <div class="col-md-auto form-cont">
+              <h1>Generate!</h1>
+
+              <!-- form -->
+              <form class="website-form">
+                <div class="form-group">
+                  <label for="word_input">Name</label>
+                  <input type="text" name="word_input" class="form-control" id="word_input" value="ImaName">
+                </div>
+
+                <input type="submit" id="submitBtn" class="btn btn-primary" name="submit" value="Add Name">
+              </form>
+            </div>
+          </div>
+
+          <div class="row justify-content-md-center">
+            <span class="bigtext"><i class="material-icons md-60">arrow_downward</i></span>
+            <div class="col-xs-12 word-cont">
+              <h2>Name List</h2>
+              <ul id="word_list">
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+
+    <!-- modal  -->
+    <div id="modalBox" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Website Preview
+        </h3>
+        <!-- iframe -->
+        <iframe class="myFrame" id="myFrame" src="loading.html"></iframe>
+        <button class="export btn btn-primary"  onclick="exportJSON()">Export</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
