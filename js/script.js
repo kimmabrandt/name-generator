@@ -29,21 +29,7 @@ $(document).ready(function() {
       $('#name_list').append('<li>' + wordRandom1 + ' ' + wordRandom2 + '</li>')
     }
 
-
     event.preventDefault();
   });
-
-  // // Returns a random integer between min and max
-  //
-  // function getRandomInt(min, max) {
-  //   return Math.floor(Math.random() * (max - min + 1)) + min;
-  // }
-  // Useful examples:
-  //
-  // // 0 - 10
-  // Math.floor(Math.random() * 11);
-  //
-
-
 
 }); // end document ready
